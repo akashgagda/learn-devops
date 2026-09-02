@@ -1,0 +1,13 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "default_agent": "tutor",
+  "permission": {
+    "edit": {
+      "notes/**": "allow",
+      "*": "ask"
+    },
+    "bash": {
+      "*": "ask"
+    }
+  }
+}
