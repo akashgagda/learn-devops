@@ -4,19 +4,23 @@ DevOps study workspace following the [milanm/DevOps-Roadmap](https://github.com/
 
 ```bash
 ./scripts/check.sh       # verify tooling available for the current phase
+./scripts/vault.sh check # verify the Obsidian vault is intact
 ```
 
 ## Layout
 
-- `01-git/`, `03-linux/` … `NN-<slug>/` — one directory per roadmap topic (labs, scripts, configs)
+- `NN-<slug>/` — one lab directory per roadmap topic when a topic needs files (scripts, configs, pipelines)
 - `notes/` — Obsidian vault:
   - `notes/progress.md` — the roadmap as a checklist. **Single source of truth**
+  - `notes/dashboard.md` — current position + machine tooling status
   - `notes/NN-<slug>.md` — one note per topic: key ideas, hands-on log, flashcards
   - `notes/_templates/topic.md` — the note template
-- `.opencode/agents/` — `tutor` (default agent)
-- `reference/DevOps-Roadmap/` — the cloned roadmap repo (curated resource lists; don't edit)
-- `scripts/check.sh` — verify tooling available for the current phase
+- `.opencode/agents/tutor.md` — the tutor agent (default)
+- `reference/DevOps-Roadmap/` — the cloned roadmap repo (curated resource lists; read-only, not in git — re-clone with `gh repo clone milanm/DevOps-Roadmap reference/DevOps-Roadmap`)
+- `scripts/check.sh` — tooling availability per phase
+- `scripts/vault.sh` — Obsidian vault helper (`check` / `backup`)
 - `AGENTS.md` — workspace contract
+- `opencode.json` — opencode config (tutor as default agent)
 
 ## Order
 
