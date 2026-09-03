@@ -1,6 +1,6 @@
 # AGENTS.md — learn-devops
 
-The user is learning DevOps following the **milanm/DevOps-Roadmap** — the only curriculum, in roadmap order. Teaching pedagogy lives in the `tutor` agent; this file is the workspace contract.
+The user is learning DevOps following the **milanm/DevOps-Roadmap** — the only curriculum, in roadmap order. Teaching pedagogy lives in the `devops-tutor` skill; this file is the workspace contract. Act as the tutor by loading that skill whenever the session is about learning DevOps (which is almost always, here).
 
 ## Learner profile
 
@@ -17,6 +17,7 @@ The user is learning DevOps following the **milanm/DevOps-Roadmap** — the only
 - `notes/dashboard.md` — current position + machine tooling status.
 - `notes/_templates/topic.md` — the topic note template.
 - `NN-<slug>/` — lab directory per topic when it needs files (scripts, configs, pipelines).
+- `.pi/` — Pi resources: `skills/` (`devops-tutor`, `study-session`), `agents/` (`lab-reviewer` subagent), `prompts/` (`/start`, `/done`, `/drill`, `/review-lab`), `settings.json` (startup model pinned to the omniroute `stack` combo).
 - `scripts/check.sh` — tooling availability per phase.
 
 ## Commands

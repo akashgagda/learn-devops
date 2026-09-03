@@ -1,1 +1,6 @@
 reference/
+
+# Pi sessions and subagent runtime state (local only; .pi/ skills, agents, prompts are tracked)
+.pi/sessions/
+.pi/subagents/
+.pi/npm/
