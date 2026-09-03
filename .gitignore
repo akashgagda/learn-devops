@@ -1,5 +1,14 @@
 reference/
 
+# Obsidian: machine-specific UI state only; the rest of the vault config is backed up
+notes/.obsidian/workspace.json
+
+# Obsidian theme is applied by Omarchy's own theme system; keep it out of git
+notes/.obsidian/themes/
+
+# Spaced-repetition data.json IS tracked on purpose: it is review progress.
+# Sweep it into commits with ./scripts/vault.sh backup.
+
 # Pi sessions and subagent runtime state (local only; .pi/ skills, agents, prompts are tracked)
 .pi/sessions/
 .pi/subagents/
