@@ -9,7 +9,7 @@ Current position: **01 - Git** (Phase 1 — Foundations)
 ## Track
 
 - Roadmap checklist: [[progress]] — single source of truth
-- Go is a parallel track in `../learn-go-tdd` (11 chapters done, up to Select)
+- Go is a parallel track in `../learn-go-tdd` (11 chapters done; ch. 12 Reflection in progress)
 - Roadmap source: `reference/DevOps-Roadmap/README.md` (free resources per topic)
 
 ## Order
@@ -20,5 +20,8 @@ Current position: **01 - Git** (Phase 1 — Foundations)
 
 ## Machine status
 
-- git, bash, ssh, curl, docker: available
-- kubectl, terraform, ansible: not installed yet (needed later)
+Last check: `./scripts/check.sh` — 8 ok, 10 missing (missing tools are fine until their phase starts).
+
+- Available: git, bash, ssh, curl, jq, make, docker, gh
+- Missing for Phase 1 (install when Linux & Bash starts): shellcheck
+- Missing for later phases: kubectl, helm, kind (P2) · terraform, ansible (P3) · promtool, aws, gcloud, az (P4)

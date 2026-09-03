@@ -17,7 +17,7 @@ date: 2026-09-02
 
 -
 
-## Self-test
+## Flashcards
 
 - Question::Answer #flashcards
 

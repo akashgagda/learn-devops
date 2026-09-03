@@ -9,7 +9,7 @@ Based on https://github.com/milanm/DevOps-Roadmap. Single source of truth for wh
 ## Phase 1 — Foundations
 
 - [ ] 01 - Git
-- [ ] 02 - Programming language — **Go** (in progress: [[../learn-go-tdd/notes/progress|learn-go-tdd]])
+- [ ] 02 - Programming language — **Go** (in progress: `../learn-go-tdd` — see its `notes/progress.md`)
 - [ ] 03 - Linux & Scripting (Bash)
 - [ ] 04 - Networking & Security
 - [ ] 05 - Server Management (Nginx, proxies, caching)
