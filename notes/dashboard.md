@@ -6,10 +6,12 @@ tags: [devops, roadmap, go]
 
 Current position: **01 - Git** (Phase 1 — Foundations)
 
+Job plan: [[3-month-plan]] — DevOps + job search by early December 2026.
+
 ## Track
 
 - Roadmap checklist: [[progress]] — single source of truth
-- Go is a parallel track in `../learn-go-tdd` (11 chapters done; ch. 12 Reflection in progress)
+- Go is a parallel track in `../learn-go-tdd` (12 chapters done; ch. 13 Sync next — see its [[3-month-plan|3-month plan]])
 - Roadmap source: `reference/DevOps-Roadmap/README.md` (free resources per topic)
 
 ## Order
