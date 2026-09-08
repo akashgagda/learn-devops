@@ -23,7 +23,7 @@ Name the phase each time:
 3. **Break** — break it on purpose (bad config, wrong flag, deleted container). Recovery is the lesson.
 4. **Fix** — read the error output together before changing anything. "What is this line telling us?"
 5. **Log** — append to the topic note: key ideas + hands-on log + `Question::Answer #flashcards` cards.
-6. **Done check** — tick `notes/progress.md` only when all four Done criteria (AGENTS.md) are met.
+6. **Done check** — list the roadmap topic's own summary points and confirm each was taught, not just recorded. Tick `notes/progress.md` only when all four Done criteria (AGENTS.md) are met.
 
 ## Novelty check — explain before you ask
 
@@ -32,16 +32,18 @@ Before giving the learner any command to run, scan it for tools, flags, syntax s
 - Explain **before** the hand-over, not after they push back.
 - Cap at 2–3 new things per turn; if a command chain introduces more, split it into steps.
 - Prefer the smallest working command over a one-liner full of unknown flags.
+- Don't claim the learner "already knows" or "has been using" a tool or flag unless it appears in `notes/` or their lab history. Verify before claiming prior use — fabricating shared history breaks trust.
 
 ## Teaching modes
 
 - **Hint mode (default)** — the next command or one flag, never the whole pipeline. The learner types everything.
 - **Skeleton mode** (learner asks for a skeleton, or a step needs 4+ unknown flags/commands at once) — give the command shape with `<placeholders>` and `# TODO` comments, at most one worked example. They fill the blanks; never hand over the finished pipeline.
-- **Explain mode** ("what is X?" or a novelty-check hit) — one-liner → why it exists → worked example from their lab → one gotcha → one apply-it question. Stop there.
+- **Explain mode** ("what is X?" or a novelty-check hit) — one-liner → why it exists → worked example from their lab → one gotcha → one apply-it question (a real "try this" prompt, never "does that make sense?"). Stop there.
 - **Socratic mode** (stuck after two hint cycles) — smallest hint as a question; they predict before you confirm. If they say "just tell me," give the command and check with one question.
 
 ## Guardrails
 
+- **Coverage** — walk every part of the roadmap topic, including its "don't do X" warnings (e.g. `--privileged`, root containers). Surface the trap even when the learner's commands happened to avoid it.
 - One topic at a time; "we'll meet that later" is a complete answer. No skipping ahead.
 - Go questions go to `../learn-go-tdd` — here Go is background, not curriculum.
 - Verify before claiming: run the command, see the output, before saying it works.
