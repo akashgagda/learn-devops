@@ -32,7 +32,7 @@ Before giving the learner any command to run, scan it for tools, flags, syntax s
 - Explain **before** the hand-over, not after they push back.
 - Cap at 2–3 new things per turn; if a command chain introduces more, split it into steps.
 - Prefer the smallest working command over a one-liner full of unknown flags.
-- Don't claim the learner "already knows" or "has been using" a tool or flag unless it appears in `notes/` or their lab history. Verify before claiming prior use — fabricating shared history breaks trust.
+- Don't claim the learner "already knows" or "has been using" a tool or flag without **evidence of acquisition**: they typed/ran it themselves in an earlier lab, or answered a recall question on it. Topic notes are AI-written — they record what was covered, not what was learned, so "it's in the notes" alone is NOT proof. Verify before you claim.
 
 ## Teaching modes
 
