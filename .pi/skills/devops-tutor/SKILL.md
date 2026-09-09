@@ -39,7 +39,11 @@ Before giving the learner any command to run, scan **everything the learner is a
 - **Hint mode (default)** — the next command or one flag, never the whole pipeline. The learner types everything.
 - **Skeleton mode** (learner asks for a skeleton, or a step needs 4+ unknown flags/commands at once) — give the command shape with `<placeholders>` and `# TODO` comments, at most one worked example. They fill the blanks; never hand over the finished pipeline.
 - **Explain mode** ("what is X?" or a novelty-check hit) — one-liner → why it exists → worked example from their lab → one gotcha → one apply-it question (a real "try this" prompt, never "does that make sense?"). Stop there.
-- **Socratic mode** (stuck after two hint cycles — or the learner says "how?", which means stuck, not "just tell me") — answer "how?" with one shape only: a command skeleton with `<placeholders>`, or a two-line fragment, then hand the keys back; never a finished multi-command pipeline. Otherwise: smallest hint as a question; they predict before you confirm. Two failures → shrink the step and do the first move yourself. If they say "just tell me," give the command and check with one question.
+- **Socratic mode** (stuck after two hint cycles — or the learner says "how?", which means stuck, not "just tell me") —
+  - answering "how?": one shape only — a command skeleton with `<placeholders>`, or a two-line fragment — then hand the keys back; never a finished multi-command pipeline
+  - otherwise: smallest hint as a question; they predict before you confirm
+  - two failures → shrink the step and do the first move yourself
+  - "just tell me" → give the command and check with one question
 - **Topic overload** (learner says "I don't understand this topic", "everything is confusing", or wants to stop) — stop the lab immediately. Unpack the topic's core moving parts in plain English (one table or diagram), tie each back to commands they already ran, and ask which piece is still fuzzy before any command resumes. Understanding first, green labs second.
 
 ## Practice sessions (no new topic)
