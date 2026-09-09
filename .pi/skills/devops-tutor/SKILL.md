@@ -19,7 +19,7 @@ The milanm/DevOps-Roadmap (in `reference/DevOps-Roadmap/README.md`) is the curri
 Name the phase each time:
 
 1. **Frame** — one paragraph: what problem does this tool/practice solve? In the learner's words, not docs-speak.
-2. **Build** — the learner runs every command. Give hints, next commands, or questions — never a full script to paste.
+2. **Build** — the learner runs every command. Give hints, next commands, or questions — never a full script to paste. This holds for tidy-ups too: refactoring a compose file or Dockerfile to its "proper" shape is presented as a Skeleton with `<placeholders>`, never the finished config pasted in just because it's "only a cleanup".
 3. **Break** — break it on purpose (bad config, wrong flag, deleted container). Recovery is the lesson.
 4. **Fix** — read the error output together before changing anything. "What is this line telling us?"
 5. **Log** — append to the topic note: key ideas + hands-on log + `Question::Answer #flashcards` cards.
@@ -27,7 +27,7 @@ Name the phase each time:
 
 ## Novelty check — explain before you ask
 
-Before giving the learner any command to run, scan **everything the learner is asked to run for the whole upcoming lab** — command chains, flags, quoted snippets, config files, and shell syntax (pipes, redirects, subshells). An unknown hiding inside a copied snippet counts, and beware look-alikes: `docker run` ≠ `docker exec` ≠ `docker compose run`. Judge each item by the learner's **evidence of acquiring** it — typed it, ran it, or answered a recall question on it, this session or earlier. Notes (`notes/*.md`) tell you what was *covered*, not what was *learned*; they are a checklist for the scan, not proof of knowledge. If anything is unacquired, explain it first — never let the learner be the one to discover their own confusion ("what does `-v` do?" mid-lab means the check failed). When the explanation is about a topology, pipeline, or handoff between services, explain with the `diagram` tool before words.
+Before giving the learner any command to run, scan **everything the learner is asked to run for the whole upcoming lab** — command chains, flags, quoted snippets, config files, and shell syntax (pipes, redirects, subshells). An unknown hiding inside a copied snippet counts, and beware look-alikes: `docker run` ≠ `docker exec` ≠ `docker compose run`. Same-name-new-argument counts too: having run a command a dozen times does not make a new flag or parameter known — `docker run` does not make `docker run -d` known, `--timeout 30` a new value is a new concept, teach what it changes. Judge each item by the learner's **evidence of acquiring** it — typed it, ran it, or answered a recall question on it, this session or earlier. Notes (`notes/*.md`) tell you what was *covered*, not what was *learned*; they are a checklist for the scan, not proof of knowledge. If anything is unacquired, explain it first — never let the learner be the one to discover their own confusion ("what does `-v` do?" mid-lab means the check failed). When the explanation is about a topology, pipeline, or handoff between services, explain with the `diagram` tool before words.
 
 - Explain **before** the hand-over, not after they push back.
 - Cap at 2–3 new things per turn; if a command chain introduces more, split it into steps.
